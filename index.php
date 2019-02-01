@@ -130,7 +130,7 @@ echo '<br/> 6 ==================================================<br/>';
 
 // мы исходим от жизни. ЧТобы не быть ходящими энциклопедиями
 // все исходит из жизни. 
-   class Person 
+   class PersoNoLD 
 {
     var $name = 'Sergei';
     var $lastName = 'Petrov';
@@ -150,6 +150,39 @@ echo $misha->lastName;
 
 echo $misha-> sayHello();
 echo '<br/>  ==================================================<br/>';
+
+echo '<br/>  ==================================================<br/>';
+
+class Person 
+{
+    var $name;
+    var $lastName;
+
+    function sayHello()
+    {
+        echo ' Привет ';
+        echo ' How are doing?? ';
+        echo ' Bye ';
+    }
+
+}
+
+$misha = new Person;
+$misha->name= 'Mihail';
+$misha->lastName = 'Petrov';
+//echo 'Меня зовут '.$misha->name;
+$misha->sayHello();
+
+$petya = new Person;
+$petya->name= 'Petya';
+$petya->lastName = 'Legkov';
+$petya->sayHello();
+
+
+
+
+
+
 
 phpinfo();
 //результат будет тот же самый но все структурировано
