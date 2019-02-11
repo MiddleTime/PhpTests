@@ -7,8 +7,8 @@ class Pet {
 
     public $name;
 
-    public function __construct($name) {
-        $this->name = $name;
+    public function __construct($myName) {
+        $this->name = $myName;
     }
 
     public function speak() {
