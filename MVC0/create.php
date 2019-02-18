@@ -1,6 +1,6 @@
 <?php
 
-//controller   - место откуда вызывается наша модель, которая задем передаем в view
+//controller   - место откуда вызывается наша модель, которая затем передаем в view
 
 function uploadImage($image){
     $name = $image['name'];
@@ -14,10 +14,7 @@ function uploadImage($image){
 //model  - место, где у меня код, который отвечают за бизнес-логигу моего проекта
 uploadImage($_FILES['image']);
 
-//echo '<pre>';
-//var_dump($_FILES);
-//
-//echo '</pre>';
+
 ?>
 
 <img src="./uploads/image.jpg" alt="">

@@ -16,9 +16,7 @@ move_uploaded_file($image['tmp_name'], "./uploads/".$filename);
 return $filename;
 }
 
-
 $filename = uploadImage($_FILES['image']);
-
 
 $pdo = new PDO("mysql:host=localhost;dbname=example1", "root", "");
 //var_dump($pdo);
