@@ -11,5 +11,5 @@ move_uploaded_file($tmp_name, "./uploads/".$name);
 ?>
 
 
-<img src="./uploads/image1.jpg" alt="">
+<img src="./uploads/image.jpg" alt="">
 
