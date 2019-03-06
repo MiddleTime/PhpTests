@@ -11,8 +11,8 @@ function uploadImage($image) {
 }
 
 function addPost($title, $content, $filename) {
-    $pdo = new PDO("mysql:host=localhost;dbname=example1", "root", "");
-    $sql = "INSERT INTO posts (title, content, image) VALUES (:title, :content, :image)";
+    $pdo = new PDO("mysql:host=localhost;dbname=test1000", "root", "");
+    $sql = "INSERT INTO example (title, content, image) VALUES (:title, :content, :image)";
     $statement = $pdo->prepare($sql);
     $statement->bindParam(":title", $title);
     $statement->bindParam(":content", $content);
@@ -22,8 +22,8 @@ function addPost($title, $content, $filename) {
 
 
 function getPosts(){
-    $pdo = new PDO("mysql:host=localhost;dbname=example1", "root", "");
-    $sql = "SELECT * FROM posts";
+    $pdo = new PDO("mysql:host=localhost;dbname=test1000", "root", "");
+    $sql = "SELECT * FROM example";
     $statement = $pdo->prepare($sql);
     $statement->execute();
     $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
